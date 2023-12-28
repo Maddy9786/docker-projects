@@ -1,0 +1,23 @@
+
+
+
+sudo apt install docker.io  #install docker
+
+systemctl restart docker.io # restart docker 
+
+docker ps # to check running container inside docker
+
+docker pull mysql:latest # pull mysql image from docker hub
+
+docker images # to check wheather docker images created successfully
+
+docker run -d -e MYSQL_ROOT_PASSWORD=Test@123 mysql:latest # to run mysql images to create conatiner of it
+
+docker ps # to check whether mysql image created
+
+docker exec -it <containerid> sh # to access the created mysql container
+
+mysql -u root -p # to login into mysql dbm
+
+
+
